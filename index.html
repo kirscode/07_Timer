@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Timer</title>
+</head>
+<body>
+
+    <div class="btn_container center">
+        <div class="btn">
+            <button id="10_Min">10 mins</button>
+            <button id="20_Min">20 mins</button>
+            <button id="30_Min">30 mins</button>
+        </div>
+    </div>
+
+    <div class="main_container center">
+        <!-- progress indicator -->
+        <div class="circle_container center">
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="outermost_circle"></div>
+        </div>
+
+        <!-- timer -->
+         <div class="timer_container center">
+            <div class="timer center"></div>
+         </div>
+
+    </div>
+
+     <!-- btn start -->
+     <div class="btn_start">
+        <button id="startStopBtn">Start</button>
+        <button class="reset" id="reset">Reset</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

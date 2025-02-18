@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.circle_container {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.semicircle {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    border-width: 15px; 
+}
+
+.semicircle:nth-child(1) {
+    background-color: #088b8b;
+    z-index: 2;
+}
+
+.semicircle:nth-child(2) {
+    background-color: #088b8b;
+    z-index: 3;
+}
+
+.semicircle:nth-child(3) {
+    background-color: #ddd;
+    z-index: 4;
+}
+
+.outermost_circle {
+    width: 280px;
+    height: 280px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+
+/* timer */
+.timer_container {
+    width: 250px;
+    height: 150px;
+    z-index: 6;
+}
+
+.timer {
+    width: 300px;
+    height: 80px;
+    color: #088b8b;
+    z-index: 7;
+}
+
+.timer div {
+    font-size: 70px;
+    font-weight: 500;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.timer .colon {
+    background-color: transparent;
+    width: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+}
+
+.btn_container {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #088b8b;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #088b8b;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+button.selected {
+    background-color: #088b8b !important;
+}
+
+
+.btn_start {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, -25%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_start button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.btn_start .reset {
+    width: 100px;
+    border: 1px solid #088b8b;
+    background-color: transparent;
+    color: #088b8b
+}
+
+
